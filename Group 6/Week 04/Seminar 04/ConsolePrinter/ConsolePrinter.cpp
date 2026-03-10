@@ -5,7 +5,7 @@ ConsolePrinter::ConsolePrinter()
 	censor = [](char ch) {return false; };
 }
 
-ConsolePrinter::ConsolePrinter(Predicate func) : censor(func)
+ConsolePrinter::ConsolePrinter(const Predicate& func) : censor(func)
 {
 
 }
